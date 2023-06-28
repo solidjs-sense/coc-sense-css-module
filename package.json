@@ -1,0 +1,55 @@
+{
+  "name": "coc-sense-css-module",
+  "version": "0.1.0",
+  "description": "coc.nvim extension for sense css module",
+  "keywords": [
+    "coc.nvim",
+    "sense-css-module"
+  ],
+  "author": "iamcco <ooiss@qq.com>",
+  "license": "MIT",
+  "repository": "git@github.com:iamcco/coc-sense-css-module.git",
+  "engines": {
+    "coc": "^0.0.80"
+  },
+  "activationEvents": [
+    "onLanguage:javascriptreact",
+    "onLanguage:typescriptreact",
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:less"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "Sense css module language server configuration",
+      "properties": {
+        "sense-css-module.enable": {
+          "type": "boolean",
+          "default": false,
+          "description": "enable coc-sense-css-module"
+        },
+        "sense-css-module.global-style-files": {
+          "type": "array",
+          "default": [],
+          "description": "global style files"
+        }
+      }
+    }
+  },
+  "main": "./out/index.js",
+  "scripts": {
+    "clean": "rimraf ./out",
+    "watch": "cross-env NODE_ENV=development node esbuild.js --watch",
+    "build": "cross-env NODE_ENV=production node esbuild.js",
+    "prepare": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "coc.nvim": "^0.0.80",
+    "typescript": "^4.1.2",
+    "sense-css-module-server": "v0.1.0",
+    "cross-env": "^7.0.3",
+    "rimraf": "^3.0.2",
+    "esbuild": "^0.9.0"
+  }
+}
