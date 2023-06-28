@@ -12,7 +12,7 @@ import { resolve } from "path";
 
 export async function activate(context: ExtensionContext) {
   const config = workspace.getConfiguration("sense-css-module");
-  const isEnable = config.get<boolean>("enable", true);
+  const isEnable = config.get<boolean>("enable", false);
   // extension is disable
   if (!isEnable) {
     return;

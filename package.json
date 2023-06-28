@@ -1,6 +1,6 @@
 {
   "name": "coc-sense-css-module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "coc.nvim extension for sense css module",
   "keywords": [
     "coc.nvim",
