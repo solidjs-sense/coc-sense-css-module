@@ -2,7 +2,7 @@
 
 coc.nvim extension for [sense css module](https://github.com/solidjs-sense/vite-plugin-sense-css-module)
 
-![image](https://user-images.githubusercontent.com/5492542/192134513-17a9d4b4-c402-4174-98a5-30510d4b6c59.png)
+![2023-07-03 12 09 55](https://github.com/solidjs-sense/coc-sense-css-module/assets/5492542/c67f6645-8a26-4726-b6f2-9eb7b98306a2)
 
 ## Features
 
@@ -22,3 +22,12 @@ Or use [sense-css-module-server](https://github.com/solidjs-sense/sense-css-modu
 
 - `sense-css-module.enable`: Enable coc-sense-css-module extension, default: `false`
 - `sense-css-module.global-style-files`: Global style files, default: `[]`
+
+Example:
+
+```json
+{
+  "sense-css-module.enable": true,
+  "sense-css-module.global-style-files": ["./src/styles/global.css"]
+}
+```
